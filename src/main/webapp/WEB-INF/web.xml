@@ -1,60 +1,60 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
     <servlet>
-        <servlet-name>CrearListar</servlet-name>
-        <servlet-class>Controlador.CrearListar</servlet-class>
+        <servlet-name>CrearListarU</servlet-name>
+        <servlet-class>Controlador.CrearListarU</servlet-class>
     </servlet>
     <servlet>
-        <servlet-name>ListarPorArea</servlet-name>
-        <servlet-class>Controlador.ListarPorArea</servlet-class>
+        <servlet-name>ListarPorAreaU</servlet-name>
+        <servlet-class>Controlador.ListarPorAreaU</servlet-class>
     </servlet>
     <servlet>
-        <servlet-name>ValidarUsuario</servlet-name>
-        <servlet-class>Controlador.ValidarUsuario</servlet-class>
+        <servlet-name>ValidarUsuarioU</servlet-name>
+        <servlet-class>Controlador.ValidarUsuarioU</servlet-class>
     </servlet>
     <servlet>
         <servlet-name>BuscarElementoU</servlet-name>
         <servlet-class>Controlador.BuscarElementoU</servlet-class>
     </servlet>
     <servlet>
-        <servlet-name>CambiarClave</servlet-name>
-        <servlet-class>Controlador.CambiarClave</servlet-class>
+        <servlet-name>CambiarClaveU</servlet-name>
+        <servlet-class>Controlador.CambiarClaveU</servlet-class>
     </servlet>
     <servlet>
         <servlet-name>EstadoU</servlet-name>
         <servlet-class>Controlador.EstadoU</servlet-class>
     </servlet>
     <servlet>
-        <servlet-name>Historial</servlet-name>
-        <servlet-class>Controlador.Historial</servlet-class>
+        <servlet-name>HistorialU</servlet-name>
+        <servlet-class>Controlador.HistorialU</servlet-class>
     </servlet>
     <servlet-mapping>
-        <servlet-name>ValidarUsuario</servlet-name>
-        <url-pattern>/ValidarUsuario</url-pattern>
+        <servlet-name>ValidarUsuarioU</servlet-name>
+        <url-pattern>/ValidarUsuarioU</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
-        <servlet-name>CrearListar</servlet-name>
-        <url-pattern>/CrearListar</url-pattern>
+        <servlet-name>CrearListarU</servlet-name>
+        <url-pattern>/CrearListarU</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
         <servlet-name>BuscarElementoU</servlet-name>
         <url-pattern>/BuscarElementoU</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
-        <servlet-name>ListarPorArea</servlet-name>
-        <url-pattern>/ListarPorArea</url-pattern>
+        <servlet-name>ListarPorAreaU</servlet-name>
+        <url-pattern>/ListarPorAreaU</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
-        <servlet-name>CambiarClave</servlet-name>
-        <url-pattern>/CambiarClave</url-pattern>
+        <servlet-name>CambiarClaveU</servlet-name>
+        <url-pattern>/CambiarClaveU</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
         <servlet-name>EstadoU</servlet-name>
         <url-pattern>/EstadoU</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
-        <servlet-name>Historial</servlet-name>
-        <url-pattern>/Historial</url-pattern>
+        <servlet-name>HistorialU</servlet-name>
+        <url-pattern>/HistorialU</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
