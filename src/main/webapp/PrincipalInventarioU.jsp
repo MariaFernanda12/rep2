@@ -39,7 +39,7 @@
         <!--Menu-->
         <div class="col-sm-2" id="menu">
             <a href="Home.jsp" class="botonMenu col-sm-12" id="enlace0">Inicio</a>
-            <a href="PrincipalInventario.jsp" class="botonMenu col-sm-12" id="enlace1">Elementos Biblioteca</a>            
+            <a href="PrincipalInventarioU.jsp" class="botonMenu col-sm-12" id="enlace1">Elementos Biblioteca</a>            
             <a href="Estado" class="botonMenu col-sm-12" id="enlace2">Mi Estado</a>
             <a href="Historial" class="botonMenu col-sm-12" id="enlace3">Historial Prestamos</a>
             <a href="CambiarClaveU.jsp" class="botonMenu col-sm-12" id="enlace4">Cambiar Clave</a>            
@@ -49,7 +49,7 @@
         <div class="col-sm-10" id="content">
             <ul>                
                 <li><a href="CrearListar" id="a">Lista de Elementos</a></li>
-                <li><a href="ListarPorArea.jsp" id="b">Lista por Area</a></li>
+                <li><a href="ListarPorAreaU.jsp" id="b">Lista por Area</a></li>
                 <li><a href="BuscarElementoU.jsp" id="c">Busqueda</a></li>
 
             </ul>

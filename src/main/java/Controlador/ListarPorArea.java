@@ -62,127 +62,127 @@ public class ListarPorArea extends HttpServlet {
             if (Enciclopedia != null) {
                 lista = daoE.listarPorArea(Enciclopedia);
                 request.setAttribute("elementos", lista);
-                RequestDispatcher rd = request.getRequestDispatcher("ListarElementos.jsp");
+                RequestDispatcher rd = request.getRequestDispatcher("ListarElementosU.jsp");
                 rd.forward(request, response);
             }
             if (Diccionarios != null) {
                 lista = daoE.listarPorArea(Diccionarios);
                 request.setAttribute("elementos", lista);
-                RequestDispatcher rd = request.getRequestDispatcher("ListarElementos.jsp");
+                RequestDispatcher rd = request.getRequestDispatcher("ListarElementosU.jsp");
                 rd.forward(request, response);
             }
             if (Espanol != null) {
                 lista = daoE.listarPorArea("Español");
                 request.setAttribute("elementos", lista);
-                RequestDispatcher rd = request.getRequestDispatcher("ListarElementos.jsp");
+                RequestDispatcher rd = request.getRequestDispatcher("ListarElementosU.jsp");
                 rd.forward(request, response);
             }
             if (Matematicas != null) {
                 lista = daoE.listarPorArea(Matematicas);
                 request.setAttribute("elementos", lista);
-                RequestDispatcher rd = request.getRequestDispatcher("ListarElementos.jsp");
+                RequestDispatcher rd = request.getRequestDispatcher("ListarElementosU.jsp");
                 rd.forward(request, response);
             }
             if (Fisica != null) {
                 lista = daoE.listarPorArea(Fisica);
                 request.setAttribute("elementos", lista);
-                RequestDispatcher rd = request.getRequestDispatcher("ListarElementos.jsp");
+                RequestDispatcher rd = request.getRequestDispatcher("ListarElementosU.jsp");
                 rd.forward(request, response);
             }
             if (Quimica != null) {
                 lista = daoE.listarPorArea(Quimica);
                 request.setAttribute("elementos", lista);
-                RequestDispatcher rd = request.getRequestDispatcher("ListarElementos.jsp");
+                RequestDispatcher rd = request.getRequestDispatcher("ListarElementosU.jsp");
                 rd.forward(request, response);
             }
             if (Sociales != null) {
                 lista = daoE.listarPorArea(Sociales);
                 request.setAttribute("elementos", lista);
-                RequestDispatcher rd = request.getRequestDispatcher("ListarElementos.jsp");
+                RequestDispatcher rd = request.getRequestDispatcher("ListarElementosU.jsp");
                 rd.forward(request, response);
             }
             if (Ingles != null) {
                 lista = daoE.listarPorArea(Ingles);
                 request.setAttribute("elementos", lista);
-                RequestDispatcher rd = request.getRequestDispatcher("ListarElementos.jsp");
+                RequestDispatcher rd = request.getRequestDispatcher("ListarElementosU.jsp");
                 rd.forward(request, response);
             }
             if (Ciencias != null) {
                 lista = daoE.listarPorArea(Ciencias);
                 request.setAttribute("elementos", lista);
-                RequestDispatcher rd = request.getRequestDispatcher("ListarElementos.jsp");
+                RequestDispatcher rd = request.getRequestDispatcher("ListarElementosU.jsp");
                 rd.forward(request, response);
             }
             if (Preescolar != null) {
                 lista = daoE.listarPorArea(Preescolar);
                 request.setAttribute("elementos", lista);
-                RequestDispatcher rd = request.getRequestDispatcher("ListarElementos.jsp");
+                RequestDispatcher rd = request.getRequestDispatcher("ListarElementosU.jsp");
                 rd.forward(request, response);
             }
             if (Filosofia != null) {
                 lista = daoE.listarPorArea(Filosofia);
                 request.setAttribute("elementos", lista);
-                RequestDispatcher rd = request.getRequestDispatcher("ListarElementos.jsp");
+                RequestDispatcher rd = request.getRequestDispatcher("ListarElementosU.jsp");
                 rd.forward(request, response);
             }
             if (Religion != null) {
                 lista = daoE.listarPorArea(Religion);
                 request.setAttribute("elementos", lista);
-                RequestDispatcher rd = request.getRequestDispatcher("ListarElementos.jsp");
+                RequestDispatcher rd = request.getRequestDispatcher("ListarElementosU.jsp");
                 rd.forward(request, response);
             }
             if (Etica != null) {
                 lista = daoE.listarPorArea(Etica);
                 request.setAttribute("elementos", lista);
-                RequestDispatcher rd = request.getRequestDispatcher("ListarElementos.jsp");
+                RequestDispatcher rd = request.getRequestDispatcher("ListarElementosU.jsp");
                 rd.forward(request, response);
             }
             if (Informatica != null) {
                 lista = daoE.listarPorArea(Informatica);
                 request.setAttribute("elementos", lista);
-                RequestDispatcher rd = request.getRequestDispatcher("ListarElementos.jsp");
+                RequestDispatcher rd = request.getRequestDispatcher("ListarElementosU.jsp");
                 rd.forward(request, response);
             }
             if (Atlas != null) {
                 lista = daoE.listarPorArea(Atlas);
                 request.setAttribute("elementos", lista);
-                RequestDispatcher rd = request.getRequestDispatcher("ListarElementos.jsp");
+                RequestDispatcher rd = request.getRequestDispatcher("ListarElementosU.jsp");
                 rd.forward(request, response);
             }
             if (Salud != null) {
                 lista = daoE.listarPorArea(Salud);
                 request.setAttribute("elementos", lista);
-                RequestDispatcher rd = request.getRequestDispatcher("ListarElementos.jsp");
+                RequestDispatcher rd = request.getRequestDispatcher("ListarElementosU.jsp");
                 rd.forward(request, response);
             }
             if (Dibujo != null) {
                 lista = daoE.listarPorArea(Dibujo);
                 request.setAttribute("elementos", lista);
-                RequestDispatcher rd = request.getRequestDispatcher("ListarElementos.jsp");
+                RequestDispatcher rd = request.getRequestDispatcher("ListarElementosU.jsp");
                 rd.forward(request, response);
             }
             if (Institucionales != null) {
                 lista = daoE.listarPorArea(Institucionales);
                 request.setAttribute("elementos", lista);
-                RequestDispatcher rd = request.getRequestDispatcher("ListarElementos.jsp");
+                RequestDispatcher rd = request.getRequestDispatcher("ListarElementosU.jsp");
                 rd.forward(request, response);
             }
             if (MaterialDidactico != null) {
                 lista = daoE.listarPorArea(MaterialDidactico);
                 request.setAttribute("elementos", lista);
-                RequestDispatcher rd = request.getRequestDispatcher("ListarElementos.jsp");
+                RequestDispatcher rd = request.getRequestDispatcher("ListarElementosU.jsp");
                 rd.forward(request, response);
             }
             if (Multimedia != null) {
                 lista = daoE.listarPorArea(Multimedia);
                 request.setAttribute("elementos", lista);
-                RequestDispatcher rd = request.getRequestDispatcher("ListarElementos.jsp");
+                RequestDispatcher rd = request.getRequestDispatcher("ListarElementosU.jsp");
                 rd.forward(request, response);
             }
             if (Equipo != null) {
                 lista = daoE.listarPorArea(Equipo);
                 request.setAttribute("elementos", lista);
-                RequestDispatcher rd = request.getRequestDispatcher("ListarElementos.jsp");
+                RequestDispatcher rd = request.getRequestDispatcher("ListarElementosU.jsp");
                 rd.forward(request, response);
             }
         } catch (URISyntaxException ex) {
