@@ -34,7 +34,7 @@ public class Historial extends HttpServlet {
             lista = daoPr.listarHistorial(id);
             request.setAttribute("Prestamo", lista);
             //3. RequestDispacher
-            RequestDispatcher rd = request.getRequestDispatcher("HistorialPrestamos.jsp");
+            RequestDispatcher rd = request.getRequestDispatcher("HistorialPrestamosU.jsp");
             rd.forward(request, response);
         } catch (URISyntaxException ex) {
             Logger.getLogger(Historial.class.getName()).log(Level.SEVERE, null, ex);

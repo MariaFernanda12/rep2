@@ -34,7 +34,7 @@ public class Estado extends HttpServlet {
             lista = daoPr.listarActivo(id);
             request.setAttribute("Prestamo", lista);
             //3. RequestDispacher
-            RequestDispatcher rd = request.getRequestDispatcher("EstadoUsuarios.jsp");
+            RequestDispatcher rd = request.getRequestDispatcher("EstadoUsuariosU.jsp");
             rd.forward(request, response);
         } catch (URISyntaxException ex) {
             Logger.getLogger(Estado.class.getName()).log(Level.SEVERE, null, ex);
