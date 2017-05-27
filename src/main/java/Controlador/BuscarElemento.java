@@ -33,7 +33,7 @@ public class BuscarElemento extends HttpServlet {
             //2. Envio de los datos por el request.
             request.setAttribute("etiqueta", elm);
             //3. RequestDispacher
-            RequestDispatcher rd = request.getRequestDispatcher("BuscarElemento.jsp");
+            RequestDispatcher rd = request.getRequestDispatcher("BuscarElementoU.jsp");
             rd.forward(request, response);
         } catch (URISyntaxException ex) {
             Logger.getLogger(BuscarElemento.class.getName()).log(Level.SEVERE, null, ex);
@@ -55,7 +55,7 @@ public class BuscarElemento extends HttpServlet {
             
             request.setAttribute("etiqueta", elm);
             //3. RequestDispacher
-            RequestDispatcher rd = request.getRequestDispatcher("BuscarElemento.jsp");
+            RequestDispatcher rd = request.getRequestDispatcher("BuscarElementoU.jsp");
             rd.forward(request, response);
         } catch (URISyntaxException ex) {
             Logger.getLogger(BuscarElemento.class.getName()).log(Level.SEVERE, null, ex);
