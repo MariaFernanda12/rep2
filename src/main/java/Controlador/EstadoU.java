@@ -15,7 +15,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
-public class Historial extends HttpServlet {
+public class EstadoU extends HttpServlet {
 
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
@@ -31,13 +31,13 @@ public class Historial extends HttpServlet {
             DaoPrestamo daoPr = new DaoPrestamo();
             Solicitante sol = (Solicitante) sesion.getAttribute("usuario");
             long id = sol.getIdentificador();
-            lista = daoPr.listarHistorial(id);
+            lista = daoPr.listarActivo(id);
             request.setAttribute("Prestamo", lista);
             //3. RequestDispacher
-            RequestDispatcher rd = request.getRequestDispatcher("HistorialPrestamosU.jsp");
+            RequestDispatcher rd = request.getRequestDispatcher("EstadoUsuariosU.jsp");
             rd.forward(request, response);
         } catch (URISyntaxException ex) {
-            Logger.getLogger(Historial.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(EstadoU.class.getName()).log(Level.SEVERE, null, ex);
         }
 
     }

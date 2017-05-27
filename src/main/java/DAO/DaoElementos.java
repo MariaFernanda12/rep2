@@ -33,7 +33,7 @@ public class DaoElementos {
             statement.setString(3, elm.getNombre());
             statement.setInt(4, elm.getCantidadDisponible());
             statement.setInt(5, elm.getValorU());
-            statement.setString(6, elm.getEstado());
+            statement.setString(6, elm.getEstadoU());
             statement.setString(7, elm.getUbicacion());
             statement.setString(8, elm.getPropiedad());
             statement.setString(9, elm.getResponsable());
@@ -71,7 +71,7 @@ public class DaoElementos {
                 elm.setNombre(resultado.getString("nombre"));
                 elm.setCantidadDisponible(resultado.getInt("cantidadDisponible"));
                 elm.setValorU(resultado.getInt("valorU"));
-                elm.setEstado(resultado.getString("estado"));
+                elm.setEstadoU(resultado.getString("EstadoU"));
                 elm.setUbicacion(resultado.getString("ubicacion"));
                 elm.setPropiedad(resultado.getString("propiedad"));
                 elm.setResponsable(resultado.getString("responsable"));
@@ -109,7 +109,7 @@ public class DaoElementos {
                 elm.setNombre(resultado.getString("nombre"));
                 elm.setCantidadDisponible(resultado.getInt("cantidadDisponible"));
                 elm.setValorU(resultado.getInt("valorU"));
-                elm.setEstado(resultado.getString("estado"));
+                elm.setEstadoU(resultado.getString("EstadoU"));
                 elm.setUbicacion(resultado.getString("ubicacion"));
                 elm.setPropiedad(resultado.getString("propiedad"));
                 elm.setResponsable(resultado.getString("responsable"));
@@ -142,7 +142,7 @@ public class DaoElementos {
                 elm.setNombre(resultado.getString("nombre"));
                 elm.setCantidadDisponible(resultado.getInt("cantidadDisponible"));
                 elm.setValorU(resultado.getInt("valorU"));
-                elm.setEstado(resultado.getString("estado"));
+                elm.setEstadoU(resultado.getString("EstadoU"));
                 elm.setUbicacion(resultado.getString("ubicacion"));
                 elm.setPropiedad(resultado.getString("propiedad"));
                 elm.setResponsable(resultado.getString("responsable"));
@@ -172,7 +172,7 @@ public class DaoElementos {
                 elm.setNombre(resultado.getString("nombre"));
                 elm.setCantidadDisponible(resultado.getInt("cantidadDisponible"));
                 elm.setValorU(resultado.getInt("valorU"));
-                elm.setEstado(resultado.getString("estado"));
+                elm.setEstadoU(resultado.getString("EstadoU"));
                 elm.setUbicacion(resultado.getString("ubicacion"));
                 elm.setPropiedad(resultado.getString("propiedad"));
                 elm.setResponsable(resultado.getString("responsable"));
@@ -185,14 +185,14 @@ public class DaoElementos {
         return elm;
     }
 
-    public boolean modificarElemento(int newCantidad, String newEstado, String newUbicacion, int etiqueta) {
+    public boolean modificarElemento(int newCantidad, String newEstadoU, String newUbicacion, int etiqueta) {
         boolean  resultado = false;
 
         try {
-            String consulta = "update inventario set cantidadDisponible=?, estado=?, ubicacion=? where etiqueta=?";
+            String consulta = "update inventario set cantidadDisponible=?, EstadoU=?, ubicacion=? where etiqueta=?";
             PreparedStatement statement = this.conexion.prepareStatement(consulta);
             statement.setInt(1, newCantidad);
-            statement.setString(2, newEstado);
+            statement.setString(2, newEstadoU);
             statement.setString(3, newUbicacion);
             statement.setInt(4, etiqueta);
             resultado = statement.execute();

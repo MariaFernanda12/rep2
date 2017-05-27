@@ -14,7 +14,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
-public class CambiarClave extends HttpServlet {
+public class CambiarClaveU extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
@@ -34,7 +34,7 @@ public class CambiarClave extends HttpServlet {
             RequestDispatcher rd = request.getRequestDispatcher("CambiarClaveU.jsp");
             rd.forward(request, response);
         } catch (URISyntaxException ex) {
-            Logger.getLogger(CambiarClave.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(CambiarClaveU.class.getName()).log(Level.SEVERE, null, ex);
         }
 
     }

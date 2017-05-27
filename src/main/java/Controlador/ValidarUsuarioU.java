@@ -13,7 +13,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
-public class ValidarUsuario extends HttpServlet {
+public class ValidarUsuarioU extends HttpServlet {
 
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
@@ -37,7 +37,7 @@ public class ValidarUsuario extends HttpServlet {
         try {
             daoUser = new DaoUsuario();
         } catch (URISyntaxException ex) {
-            Logger.getLogger(ValidarUsuario.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(ValidarUsuarioU.class.getName()).log(Level.SEVERE, null, ex);
         }
         Solicitante sol = new Solicitante();
         sol = daoUser.validar(textoId, clave);

@@ -110,7 +110,7 @@
         <div class="col-sm-2" id="menu">
             <a href="Home.jsp" class="botonMenu col-sm-12" id="enlace0">Inicio</a>
             <a href="PrincipalInventarioU.jsp" class="botonMenu col-sm-12" id="enlace1">Elementos Biblioteca</a>            
-            <a href="Estado" class="botonMenu col-sm-12" id="enlace2">Mi Estado</a>
+            <a href="EstadoU" class="botonMenu col-sm-12" id="enlace2">Mi EstadoU</a>
             <a href="Historial" class="botonMenu col-sm-12" id="enlace3">Historial Prestamos</a>
             <a href="CambiarClaveU.jsp" class="botonMenu col-sm-12" id="enlace4">Cambiar Clave</a>            
         </div>
@@ -141,7 +141,7 @@
             <br>
             <br>
             <p id="ingreseBuscarEt">Ingrese el número de etiqueta que desea buscar:</p>
-            <form method="POST" action="BuscarElemento" id="FormPost">
+            <form method="POST" action="BuscarElementoU" id="FormPost">
                 <input type="text" name="Buscar" placeholder="Etiqueta..">
                 <br>
                 <br>
@@ -149,7 +149,7 @@
                 <div id="botonEnviar1"><input name="Enviar" type="submit" class="enviar" value="BUSCAR"></div>
             </form>
             <p id="ingreseBuscarNom">Ingrese el nombre que desea buscar:</p>
-            <form method="GET" action="BuscarElemento" id="FormGet">
+            <form method="GET" action="BuscarElementoU" id="FormGet">
                 <input type="text" name="Buscar" placeholder="Nombre..">
                 <br>
                 <br>
@@ -169,7 +169,7 @@
                     <th>Etiqueta</th>
                     <th style="width:700px">Nombre</th>
                     <th>Cantidad Disponible</th>
-                    <th>Estado</th>
+                    <th>EstadoU</th>
                     <th>Ubicacion</th>
                     <th>Area</th>
 
@@ -178,7 +178,7 @@
                     <td> <%=elm.getEtiqueta()%> </td>
                     <td style="width:700px ;height: auto" ><%=elm.getNombre()%></td>
                     <td> <%=elm.getCantidadDisponible()%></td>
-                    <td><%=elm.getEstado()%></td>
+                    <td><%=elm.getEstadoU()%></td>
                     <td> <%=elm.getUbicacion()%> </td>
                     <td> <%=elm.getArea()%></td>
                 </tr>

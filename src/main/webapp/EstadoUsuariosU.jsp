@@ -6,7 +6,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>MiEstado</title>
+        <title>MiEstadoU</title>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <link rel="shortcut icon" href="Imagenes/Libros.png">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -77,14 +77,14 @@
         <div class="col-sm-2" id="menu">
             <a href="Home.jsp" class="botonMenu col-sm-12" id="enlace0">Inicio</a>
             <a href="PrincipalInventarioU.jsp" class="botonMenu col-sm-12" id="enlace1">Elementos Biblioteca</a>            
-            <a href="Estado" class="botonMenu col-sm-12" id="enlace2">Mi Estado</a>
+            <a href="EstadoU" class="botonMenu col-sm-12" id="enlace2">Mi EstadoU</a>
             <a href="Historial" class="botonMenu col-sm-12" id="enlace3">Historial Prestamos</a>
             <a href="CambiarClaveU.jsp" class="botonMenu col-sm-12" id="enlace4">Cambiar Clave</a>            
         </div>
 
         <!--Contenido-->
         <div class="col-sm-10" id="content">                       
-            <h1 id="titulo2">Estado Actual</h1>
+            <h1 id="titulo2">EstadoU Actual</h1>
             <br>
             <p class="sub">A la fecha estos son los elementos que no ha devuelto:</p>
             <div id="contentTable">
@@ -92,7 +92,7 @@
                     <tr>
                         <th style="width:400px ;height: auto">Codigo del Elemento</th>                                                                 
                         <th style="width:400px ;height: auto">Fecha de Devolucion</th>                                    
-                        <th style="width:400px ;height: auto">Estado del prestamo</th>                                 
+                        <th style="width:400px ;height: auto">EstadoU del prestamo</th>                                 
 
                     </tr>
                     <%  if (request.getAttribute("Prestamo") != null) {
@@ -102,7 +102,7 @@
                     <tr>   
                         <td> <%=prestamo.getEtiquetaInv()%></td>                             
                         <td> <%=prestamo.getFecha()%></td>           
-                        <td> <%=prestamo.getEstadoSol()%></td>      
+                        <td> <%=prestamo.getEstadoUSol()%></td>      
                     </tr>
 
                     <%

@@ -9,7 +9,7 @@ public class Prestamo {
     //Fecha de devolución
     private String fecha;
     /*Si ya se devolvio es true de lo contrario será false */
-    private String estadoSol;
+    private String EstadoUSol;
 
     public int getEtiquetaInv() {
         return etiquetaInv;
@@ -35,12 +35,12 @@ public class Prestamo {
         this.fecha = fecha;
     }
 
-    public String getEstadoSol() {
-        return estadoSol;
+    public String getEstadoUSol() {
+        return EstadoUSol;
     }
 
-    public void setEstadoSol(String estadoSol) {
-        this.estadoSol = estadoSol;
+    public void setEstadoUSol(String EstadoUSol) {
+        this.EstadoUSol = EstadoUSol;
     }
 
 }

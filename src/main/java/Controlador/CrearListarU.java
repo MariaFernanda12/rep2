@@ -14,7 +14,7 @@ import java.util.logging.Logger;
 
 import javax.servlet.RequestDispatcher;
 
-public class CrearListar extends HttpServlet {
+public class CrearListarU extends HttpServlet {
 
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException, InterruptedException {
@@ -37,7 +37,7 @@ public class CrearListar extends HttpServlet {
             RequestDispatcher rd = request.getRequestDispatcher("ListarElementosU.jsp");
             rd.forward(request, response);
         } catch (URISyntaxException ex) {
-            Logger.getLogger(CrearListar.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(CrearListarU.class.getName()).log(Level.SEVERE, null, ex);
         }
         
     }
@@ -52,7 +52,7 @@ public class CrearListar extends HttpServlet {
             String nombre = request.getParameter("nombre");
             String cantidadDisponible = request.getParameter("cantidadDisponible");
             String valorU = request.getParameter("valorU");
-            String estado = request.getParameter("estado");
+            String EstadoU = request.getParameter("EstadoU");
             String ubicacion = request.getParameter("ubicacion");
             String propiedad = request.getParameter("propiedad");
             String responsable = request.getParameter("responsable");
@@ -65,7 +65,7 @@ public class CrearListar extends HttpServlet {
             elm.setNombre(nombre);
             elm.setCantidadDisponible(Integer.parseInt(cantidadDisponible));
             elm.setValorU(Integer.parseInt(valorU));
-            elm.setEstado(estado);
+            elm.setEstadoU(EstadoU);
             elm.setUbicacion(ubicacion);
             elm.setPropiedad(propiedad);
             elm.setResponsable(responsable);
@@ -83,7 +83,7 @@ public class CrearListar extends HttpServlet {
             RequestDispatcher rd = request.getRequestDispatcher("IngresoElemento.jsp");
             rd.forward(request, response);
         } catch (URISyntaxException ex) {
-            Logger.getLogger(CrearListar.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(CrearListarU.class.getName()).log(Level.SEVERE, null, ex);
         }
         
 

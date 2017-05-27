@@ -7,7 +7,7 @@ public class Elemento {
     private String nombre;       
     private int cantidadDisponible;
     private int valorU;
-    private String estado;
+    private String EstadoU;
     private String ubicacion;
     private String propiedad;
     private String responsable;
@@ -54,12 +54,12 @@ public class Elemento {
         this.valorU = valorU;
     }
 
-    public String getEstado() {
-        return estado;
+    public String getEstadoU() {
+        return EstadoU;
     }
 
-    public void setEstado(String estado) {
-        this.estado = estado;
+    public void setEstadoU(String EstadoU) {
+        this.EstadoU = EstadoU;
     }
 
     public String getUbicacion() {

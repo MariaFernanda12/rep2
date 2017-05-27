@@ -13,7 +13,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-public class BuscarElemento extends HttpServlet {
+public class BuscarElementoU extends HttpServlet {
 
   
 
@@ -36,7 +36,7 @@ public class BuscarElemento extends HttpServlet {
             RequestDispatcher rd = request.getRequestDispatcher("BuscarElementoU.jsp");
             rd.forward(request, response);
         } catch (URISyntaxException ex) {
-            Logger.getLogger(BuscarElemento.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(BuscarElementoU.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
 
@@ -58,7 +58,7 @@ public class BuscarElemento extends HttpServlet {
             RequestDispatcher rd = request.getRequestDispatcher("BuscarElementoU.jsp");
             rd.forward(request, response);
         } catch (URISyntaxException ex) {
-            Logger.getLogger(BuscarElemento.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(BuscarElementoU.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
 

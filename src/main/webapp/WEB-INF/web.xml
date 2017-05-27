@@ -13,16 +13,16 @@
         <servlet-class>Controlador.ValidarUsuario</servlet-class>
     </servlet>
     <servlet>
-        <servlet-name>BuscarElemento</servlet-name>
-        <servlet-class>Controlador.BuscarElemento</servlet-class>
+        <servlet-name>BuscarElementoU</servlet-name>
+        <servlet-class>Controlador.BuscarElementoU</servlet-class>
     </servlet>
     <servlet>
         <servlet-name>CambiarClave</servlet-name>
         <servlet-class>Controlador.CambiarClave</servlet-class>
     </servlet>
     <servlet>
-        <servlet-name>Estado</servlet-name>
-        <servlet-class>Controlador.Estado</servlet-class>
+        <servlet-name>EstadoU</servlet-name>
+        <servlet-class>Controlador.EstadoU</servlet-class>
     </servlet>
     <servlet>
         <servlet-name>Historial</servlet-name>
@@ -37,8 +37,8 @@
         <url-pattern>/CrearListar</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
-        <servlet-name>BuscarElemento</servlet-name>
-        <url-pattern>/BuscarElemento</url-pattern>
+        <servlet-name>BuscarElementoU</servlet-name>
+        <url-pattern>/BuscarElementoU</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
         <servlet-name>ListarPorArea</servlet-name>
@@ -49,8 +49,8 @@
         <url-pattern>/CambiarClave</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
-        <servlet-name>Estado</servlet-name>
-        <url-pattern>/Estado</url-pattern>
+        <servlet-name>EstadoU</servlet-name>
+        <url-pattern>/EstadoU</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
         <servlet-name>Historial</servlet-name>

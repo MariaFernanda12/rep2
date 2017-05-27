@@ -14,7 +14,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-public class ListarPorArea extends HttpServlet {
+public class ListarPorAreaU extends HttpServlet {
 
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
@@ -186,7 +186,7 @@ public class ListarPorArea extends HttpServlet {
                 rd.forward(request, response);
             }
         } catch (URISyntaxException ex) {
-            Logger.getLogger(ListarPorArea.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(ListarPorAreaU.class.getName()).log(Level.SEVERE, null, ex);
         }
 
     }

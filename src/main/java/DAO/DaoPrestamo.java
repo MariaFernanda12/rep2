@@ -54,11 +54,11 @@ public class DaoPrestamo {
         return resultado;
     }
 
-    public boolean cambiarEstado(long id, int etiqueta) {
+    public boolean cambiarEstadoU(long id, int etiqueta) {
         boolean resultado = false;
         try {
             //1.Establecer la consulta
-            String consulta = "UPDATE prestamo SET estado='Terminado' WHERE identificadorSol=?";
+            String consulta = "UPDATE prestamo SET EstadoU='Terminado' WHERE identificadorSol=?";
             //2. Crear el PreparedStament
             PreparedStatement statement = this.conexion.prepareStatement(consulta);
             //-----------------------------------
@@ -89,7 +89,7 @@ public class DaoPrestamo {
             statement.setInt(1, pr.getEtiquetaInv());
             statement.setLong(2, pr.getIdentificadorSol());
             statement.setString(3, pr.getFecha());
-            statement.setString(4, pr.getEstadoSol());
+            statement.setString(4, pr.getEstadoUSol());
 
             //3. Hacer la ejecucion
             resultado = statement.execute();
@@ -119,7 +119,7 @@ public class DaoPrestamo {
                 Prestamo pr = new Prestamo();
                 pr.setEtiquetaInv(resultado.getInt("etiquetaInv"));
                 pr.setFecha(resultado.getString("fechaDev"));
-                pr.setEstadoSol(resultado.getString("estado"));
+                pr.setEstadoUSol(resultado.getString("EstadoU"));
 
                 respuesta.add(pr);
             }
@@ -134,7 +134,7 @@ public class DaoPrestamo {
     public ArrayList<Prestamo> listarActivo(long id) {
 
         ArrayList<Prestamo> respuesta = new ArrayList();
-        String consulta = "select * from prestamo where identificadorSol=" + id + " and estado='Activo'";
+        String consulta = "select * from prestamo where identificadorSol=" + id + " and EstadoU='Activo'";
 
         try {
 
@@ -148,7 +148,7 @@ public class DaoPrestamo {
                 Prestamo pr = new Prestamo();
                 pr.setEtiquetaInv(resultado.getInt("etiquetaInv"));
                 pr.setFecha(resultado.getString("fechaDev"));
-                pr.setEstadoSol(resultado.getString("estado"));
+                pr.setEstadoUSol(resultado.getString("EstadoU"));
 
                 respuesta.add(pr);
             }
