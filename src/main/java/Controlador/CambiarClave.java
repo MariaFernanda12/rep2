@@ -31,7 +31,7 @@ public class CambiarClave extends HttpServlet {
             boolean resultado = daoUser.cambiarClave(id, claveNueva, claveAntigua);
             
             request.setAttribute("CambioClave", resultado);
-            RequestDispatcher rd = request.getRequestDispatcher("CambiarClave.jsp");
+            RequestDispatcher rd = request.getRequestDispatcher("CambiarClaveU.jsp");
             rd.forward(request, response);
         } catch (URISyntaxException ex) {
             Logger.getLogger(CambiarClave.class.getName()).log(Level.SEVERE, null, ex);

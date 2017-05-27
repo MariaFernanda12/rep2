@@ -81,7 +81,7 @@
             <a href="PrincipalInventario.jsp" class="botonMenu col-sm-12" id="enlace1">Elementos Biblioteca</a>            
             <a href="Estado" class="botonMenu col-sm-12" id="enlace2">Mi Estado</a>
             <a href="Historial" class="botonMenu col-sm-12" id="enlace3">Historial Prestamos</a>
-            <a href="CambiarClave.jsp" class="botonMenu col-sm-12" id="enlace4">Cambiar Clave</a>            
+            <a href="CambiarClaveU.jsp" class="botonMenu col-sm-12" id="enlace4">Cambiar Clave</a>            
         </div>
 
         <!--Contenido-->
